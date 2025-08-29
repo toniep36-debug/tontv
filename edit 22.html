@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TON TV - Filmes, Séries e Canais</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0c0c0c;
+            color: #fff;
+        }
+
+        header {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #00c3ff;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00c3ff;
+        }
+
+        .banner {
+            width: 100%;
+            max-height: 700px;
+            overflow: hidden;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #00c3ff;
+            margin-bottom: 20px;
+        }
+
+        .planos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        .card h3 {
+            color: #00c3ff;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 24px;
+            background: #00c3ff;
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #0099cc;
+        }
+
+        footer {
+            background: #111;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        /* Botão fixo do Telegram */
+        .telegram-fixo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #00c3ff;
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 14px 20px;
+            border-radius: 50px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+            transition: background 0.3s;
+            z-index: 999;
+        }
+
+        .telegram-fixo:hover {
+            background: #0099cc;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav a {
+                margin: 5px 10px;
+                font-size: 0.9rem;
+            }
+
+            .planos {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+            }
+
+            section {
+                padding: 30px 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.2rem;
+            }
+
+            nav a {
+                font-size: 0.8rem;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+
+            .telegram-fixo {
+                padding: 12px 16px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📺 TON TV</h1>
+        <nav>
+            <a href="#home">Início</a>
+            <a href="#planos">Planos</a>
+            <a href="#teste">Teste Grátis</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <img src="imagem12.png" alt="TON TV Banner">
+    </div>
+
+    <section id="planos">
+        <h2>Nosso Plano</h2>
+        <div class="planos">
+            <div class="card">
+                <h3>Plano Mensal</h3>
+                <p>Acesso a canais, filmes e séries ilimitados.</p>
+                <h2>R$ 25,00/mês</h2>
+                <a href="#contato" class="btn">Assinar Agora</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="teste">
+        <h2>Teste Grátis</h2>
+        <p>Experimente grátis por <strong>4 horas</strong> e comprove a qualidade da TON TV.</p>
+        <a href="#contato" class="btn">Solicitar Teste</a>
+    </section>
+
+    <section id="contato">
+        <h2>Fale Conosco</h2>
+        <p>Entre em contato via Telegram e faça parte da família TON TV.</p>
+        <a href="https://t.me/SEULINK" target="_blank" class="btn">💬 Telegram</a>
+    </section>
+
+    <footer>
+        <p>© 2025 TON TV - Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="https://t.me/SEULINK" target="_blank" class="telegram-fixo">💬 Fale no Telegram</a>
+
+</body>
+</html>
